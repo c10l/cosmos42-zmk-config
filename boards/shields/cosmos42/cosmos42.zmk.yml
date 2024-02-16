@@ -1,0 +1,13 @@
+file_format: "1"
+id: cosmos42
+name: Cosmos42
+type: shield
+url: https://github.com/c10l/cosmos42-zmk-config
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+  - backlight
+siblings:
+  - cosmos42_left
+  - cosmos42_right

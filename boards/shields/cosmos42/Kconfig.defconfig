@@ -1,0 +1,16 @@
+if SHIELD_COSMOS42_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "cosmos42"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_COSMOS42_LEFT || SHIELD_COSMOS42_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
