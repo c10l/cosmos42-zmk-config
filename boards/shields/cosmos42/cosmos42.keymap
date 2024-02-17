@@ -7,9 +7,9 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// | ESC |  Q  |  W  |  E  |  R  |  T  |                |  Y  |  U  |  I  |  O  |  P  | BSPC |
-// | TAB |  A  |  S  |  D  |  F  |  G  |                |  H  |  J  |  K  |  L  |  ;  |  '   |
-// | SHF |  Z  |  X  |  C  |  V  |  B  |                |  N  |  M  |  ,  |  .  |  /  | SHF  |
+// | ESC |  Q  |  W  |  E  |  R  |  T  |                            |  Y  |  U  |  I  |  O  |  P  | BSPC |
+// | TAB |  A  |  S  |  D  |  F  |  G  |                            |  H  |  J  |  K  |  L  |  ;  |  '   |
+// | SHF |  Z  |  X  |  C  |  V  |  B  |                            |  N  |  M  |  ,  |  .  |  /  | SHF  |
 //                               | CMD | lwr | SPC |    | ENT | rse | ALT |
 
             bindings = <
