@@ -30,3 +30,11 @@ reset:
 
 	cp build/reset/zephyr/zmk.uf2 target/settings_reset.uf2
 .PHONY: reset
+
+flash-left:
+	cp target/$(kb_name)-left.uf2 /Volumes/NICENANO/
+.PHONY: flash-left
+
+flash-right:
+	cp target/$(kb_name)-right.uf2 /Volumes/NICENANO/
+.PHONY: flash-right
