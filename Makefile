@@ -1,8 +1,12 @@
 kb_name = cosmos42
 sides = left right
 
-all: $(sides) reset
+all: clean $(sides) reset
 .PHONY: all
+
+clean:
+	rm target/*
+.PHONY: clean
 
 target:
 	mkdir target/
