@@ -38,3 +38,7 @@ flash-left:
 flash-right:
 	cp target/$(kb_name)-right.uf2 /Volumes/NICENANO/
 .PHONY: flash-right
+
+flash-reset:
+	cp target/settings_reset.uf2 /Volumes/NICENANO/
+.PHONY: flash-reset
