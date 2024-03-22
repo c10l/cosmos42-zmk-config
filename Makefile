@@ -4,7 +4,7 @@ sides = left right
 all: $(sides)
 .PHONY: all
 
-left right:
+left right: target
 	west build \
 		-p \
 		-d build/$@ \
@@ -14,4 +14,9 @@ left right:
 			-DSHIELD=$(kb_name)_$@ \
 			-DZMK_CONFIG=$(shell pwd)/config \
 			-DZMK_EXTRA_MODULES=$(shell pwd)
+
+	cp build/$@/zephyr/zmk.uf2 target/$(kb_name)-$@.uf2
 .PHONY: left right
+
+target:
+	mkdir target/
