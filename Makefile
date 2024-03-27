@@ -1,5 +1,6 @@
 kb_name = cosmos42
 sides = left right
+WEST_OPTS = "" # -p for pristine
 
 all: clean $(sides) reset
 .PHONY: all
@@ -13,6 +14,7 @@ target:
 
 left right: target
 	west build \
+		$(WEST_OPTS) \
 		-d build/$@ \
 		-s $(WORKSPACE_DIR)/app \
 		-b nice_nano_v2 \
